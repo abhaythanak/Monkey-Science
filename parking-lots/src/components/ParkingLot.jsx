@@ -20,8 +20,10 @@ const ParkingLot = ({ lot, takeVehicle }) => {
   }
 
   return (
-    <div className={`parking-lot ${lot}`} onClick={()=>takeVehicle(lot)} style={{ backgroundColor: statusColor }}>
+    <div className="container">
+      <div className={`parking-lot ${lot}`} onClick={()=>takeVehicle(lot)} style={{ backgroundColor: statusColor }}>
       {statusSymbol}-{statusText}
+    </div>
     </div>
   );
 };

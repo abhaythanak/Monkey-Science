@@ -1,11 +1,70 @@
-.parking-wrapper{
-    
+*{
+    background-color: rgb(177, 151, 204);
+}
+.App > h1{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    font-weight: 900;
+    color: #470b0b;  
+}
 
+.parking-wrapper{
+ margin: 20px 100px;
 }
 
 .parking-lot{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px 5px;
+    border-radius: 10px;
+    gap: 60px;
+    cursor: pointer;
+}
+.ParkCar{
     padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    background-color: #f17676;
+}
+.ParkCar:hover{
+    background-color: #f04646;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba( 0, 0, 0, 0.23);
+    transform: translate(0px ,-8px);
+}
+
+.ParkBike{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+    background-color: #f17676;
+}
+.ParkBike:hover{
+    background-color: #f04646;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+    0 3px 6px rgba( 0, 0, 0, 0.23);
+    transform: translate(0px ,-8px);
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;  
+}
+.charges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 80px;
+    
 }

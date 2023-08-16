@@ -2,9 +2,9 @@
 
 const ParkingForm = ({ parkCar, parkBike }) => {
   return (
-    <div>
-      <button onClick={parkCar}>Park Car</button>
-      <button onClick={parkBike}>Park Bike</button>
+    <div className="btnContainer">
+      <button className="ParkCar" onClick={parkCar}>Park Car</button>
+      <button className="ParkBike" onClick={parkBike}>Park Bike</button>
     </div>
   );
 };

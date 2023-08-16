@@ -85,7 +85,7 @@ const App = () => {
       </div>
      </div>
       <ParkingForm parkCar={handleParkCar} parkBike={handleParkBike} />
-      <div>
+      <div className='charges'>
         Total Charges: {totalCharges} Rs
       </div>
     </div>
