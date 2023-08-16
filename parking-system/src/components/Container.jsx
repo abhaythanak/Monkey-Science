@@ -17,9 +17,19 @@ export default function Container() {
         count.innerText = selectedLotCount;
         total.innerText = selectedLotCount * ticketPrice
     }  
-    
 
-   
+    // park bike
+    let statusColor = 'green';
+    let statusSymbol = '✓';
+  
+    if (lot === 'car' || lot === 'bike2') {
+      statusColor = 'red';
+      statusSymbol = 'X';
+    } else if (lot === 'bike1') {
+      statusColor = 'orange';
+      statusSymbol = '+';
+    }
+
 
 const LotSelection = (e)=>{
     if(e.target.classList.contains('seat') && 
